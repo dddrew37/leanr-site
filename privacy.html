@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LEANR — Privacy Policy</title>
+<meta name="description" content="How LEANR handles your data. Short version: it stays on your phone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  /* "Arcade Night" — the same tokens as the app, CLAUDE.md § 6. */
+  :root {
+    --ground: #0d0d0f;
+    --ink: #0b0b0b;
+    --card: #ffffff;
+    --muted-card: #2a2a2e;
+    --muted-border: #55555c;
+    --on-dark: #ffffff;
+    --on-dark-3: #8f8f98;
+    --on-card: #0b0b0b;
+    --on-card-2: #55555c;
+    --pop: #c7ff3a;
+    --pop2: #ff4fa3;
+    --pop3: #4fd8ff;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background-color: var(--ground);
+    background-image: radial-gradient(rgba(255,255,255,0.09) 1px, transparent 1px);
+    background-size: 14px 14px;
+    color: var(--on-dark);
+    font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    line-height: 1.65;
+    padding: 34px 18px 80px;
+  }
+
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  h1, h2 {
+    font-family: "Unbounded", system-ui, sans-serif;
+    text-transform: uppercase;
+    line-height: 1.15;
+  }
+  h1 { font-weight: 900; font-size: clamp(30px, 7vw, 50px); letter-spacing: -0.02em; margin: 0 0 8px; }
+  h2 { font-weight: 700; font-size: 17px; letter-spacing: 0.4px; margin: 0 0 12px; }
+
+  .kicker {
+    font-family: "Unbounded", sans-serif; font-weight: 700; font-size: 11px;
+    letter-spacing: 2px; color: var(--pop3); text-transform: uppercase; margin-bottom: 10px;
+  }
+  .updated { color: var(--on-dark-3); font-size: 13px; margin: 0 0 30px; }
+
+  /* Card: white, 3px ink border, hard offset shadow — no blur. */
+  .card {
+    background: var(--card); color: var(--on-card);
+    border: 3px solid var(--ink); border-radius: 20px;
+    padding: 22px; margin: 0 0 22px;
+    box-shadow: 5px 5px 0 var(--on-dark);
+  }
+  .card > *:last-child { margin-bottom: 0; }
+
+  /* Hero card: lime, tilted a degree. Only this one tilts. */
+  .card--hero {
+    background: var(--pop); box-shadow: 6px 6px 0 var(--ink); transform: rotate(-1deg);
+  }
+  .card--hero h2 { font-size: 21px; }
+  .card--warn { background: var(--pop2); box-shadow: 5px 5px 0 var(--ink); }
+
+  p { margin: 0 0 14px; }
+  ul, ol { padding-left: 20px; margin: 0 0 14px; }
+  li { margin-bottom: 9px; }
+  strong { font-weight: 700; }
+  a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+  /* Wide content must scroll inside its own box, never the page. */
+  .table-scroll { overflow-x: auto; margin: 0 0 14px; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 2px solid #ececf0; vertical-align: top; }
+  th {
+    font-family: "Unbounded", sans-serif; font-weight: 700; font-size: 10px;
+    letter-spacing: 1px; text-transform: uppercase; color: var(--on-card-2);
+    border-bottom: 3px solid var(--ink);
+  }
+  tr:last-child td { border-bottom: none; }
+  td.where { white-space: nowrap; font-weight: 700; }
+  .server { color: var(--pop2); }
+
+  footer { color: var(--on-dark-3); font-size: 13px; text-align: center; margin-top: 34px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">LEANR</div>
+  <h1>Privacy<br>Policy</h1>
+  <p class="updated">Last updated: 28 September 2026</p>
+
+  <section class="card card--hero">
+    <h2>The short version</h2>
+    <p>Your data stays on your phone. We never see your weight, your measurements or your
+    history, and we never ask for your name, email or a password.</p>
+    <p>The one exception is photos, and only if you use the AI photo estimate. When you do, your
+    photo is sent to our server, passed to an AI service for a few seconds, and then discarded.
+    It is never saved on our servers and never used to train anything.</p>
+    <p>Free users see ads. Subscriptions are handled by Google Play. That is the whole story; the
+    rest of this page spells it out.</p>
+  </section>
+
+  <section class="card">
+    <h2>What data the app handles, and where it lives</h2>
+    <p>Almost everything stays in the app on your phone. Only the last three rows below ever
+    touch our servers.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Data</th><th>Where it lives</th><th>Why</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Sex, date of birth, height, goals</td><td class="where">Your phone only</td><td>Every body fat formula needs them</td></tr>
+          <tr><td>Daily weight</td><td class="where">Your phone only</td><td>The trend chart</td></tr>
+          <tr><td>Caliper and tape measurements</td><td class="where">Your phone only</td><td>Body fat estimates</td></tr>
+          <tr><td>Body fat results and history</td><td class="where">Your phone only</td><td>Charts and the weekly read</td></tr>
+          <tr><td>Progress photos</td><td class="where">Your phone only (the app's private folder)</td><td>Shown back to you in your history</td></tr>
+          <tr><td>Reminder settings</td><td class="where">Your phone only</td><td>Notifications</td></tr>
+          <tr><td>A photo, during an AI estimate</td><td class="where server">Our server, for seconds, then deleted</td><td>To get the estimate</td></tr>
+          <tr><td>A summary of your numbers, during a weekly read</td><td class="where server">Our server, for seconds, then deleted</td><td>To write the note</td></tr>
+          <tr><td>An anonymous ID and a device ID</td><td class="where server">Our server</td><td>To count AI usage and stop the free estimate being reused</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>We do not collect your name, email address, phone number, contacts, location or anything
+    from other apps. There is no account to create.</p>
+    <p>If you use a Google-account backup on your phone, Android may include the app's database in
+    that backup. Photos are excluded from it. That backup is between you and Google; we cannot
+    see it.</p>
+  </section>
+
+  <section class="card">
+    <h2>Photos and the AI estimate</h2>
+    <p>Your photos never leave your phone unless you tap the AI estimate button, and then only for
+    the seconds it takes to get an answer.</p>
+    <p>When you request an AI estimate, this is exactly what happens:</p>
+    <ol>
+      <li>The app shrinks the photo (or up to three photos: front, side, back) to about 1,000
+      pixels on the long side.</li>
+      <li>It sends them to our server over an encrypted connection, along with your sex, height
+      and weight.</li>
+      <li>Our server passes them straight to
+      <a href="https://openai.com/policies/" rel="noopener">OpenAI</a> to produce the estimate.</li>
+      <li>The answer comes back as text: a number, a range, and a few words about what was
+      visible.</li>
+      <li>Our server returns that text to your phone and discards the photos. They are not written
+      to disk, a database or a log.</li>
+    </ol>
+    <p>The original photos stay in the app's private folder on your phone so you can see them in
+    your history. You can delete any of them at any time from the session screen.</p>
+    <p>OpenAI processes the photos only to produce the estimate. Under its API terms it does not
+    use them to train its models, and may retain API inputs for up to 30 days for abuse
+    monitoring before deleting them.</p>
+    <p>The estimate is an opinion from an AI, not a medical measurement. It can be wrong. Please
+    don't use it to diagnose or treat anything.</p>
+  </section>
+
+  <section class="card">
+    <h2>Subscriptions and identifiers</h2>
+    <p>There is no login. Two identifiers do the work an account would normally do, and neither is
+    tied to your name.</p>
+    <p><strong>Anonymous ID.</strong> The first time you open the app it asks our server for a
+    random ID and stores it on your phone. It lets our server count how many AI estimates you have
+    used this month. If you uninstall the app, it is gone.</p>
+    <p><strong>Device ID.</strong> Android gives each app a stable ID for your device. We record it
+    once, when you use the one free AI estimate, so that reinstalling the app doesn't grant
+    another one. It is not used for advertising or for tracking you across apps.</p>
+    <p><strong>Google Play billing.</strong> If you subscribe, payment is handled entirely by
+    Google Play using the Google account on your phone. We never see your card, your name or your
+    email. We use <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a> to
+    check whether a subscription is active; it receives your anonymous ID and the purchase details
+    Google Play shares with it, nothing else.</p>
+    <p><strong>AI usage log.</strong> Our server keeps a row per AI request: your anonymous ID, the
+    subscription it belongs to, the kind of request, and the time. This is how the monthly limits
+    work. It contains no photos, no measurements and no results.</p>
+  </section>
+
+  <section class="card">
+    <h2>Backup, export and deleting your data</h2>
+    <p>Because your data lives on your phone, you are in charge of it.</p>
+    <ul>
+      <li><strong>Delete anything.</strong> Swipe a weight entry or open a session and tap Delete.
+      Photos are removed from the phone at the same time.</li>
+      <li><strong>Delete everything.</strong> Uninstall the app. All data and photos in the app's
+      private folder go with it. Our server keeps only the anonymous-ID usage rows described
+      above, which cannot be linked back to you; they are deleted after 13 months.</li>
+      <li><strong>Export.</strong> Pro subscribers can export their history as a CSV file from
+      Settings. That file is yours; we don't receive a copy.</li>
+      <li><strong>Backup.</strong> If Android backup is on for your phone, the app's database is
+      included and restored when you set up a new phone. Photos are not included.</li>
+    </ul>
+    <p>We cannot delete data from your phone remotely, and we cannot recover it for you if you
+    lose the phone without a backup.</p>
+  </section>
+
+  <section class="card">
+    <h2>Ads, children, changes and contact</h2>
+    <p><strong>Ads.</strong> Free users see banner ads served by
+    <a href="https://policies.google.com/technologies/ads" rel="noopener">Google AdMob</a>. AdMob
+    may use your device's advertising ID to show relevant ads and measure them; you can reset or
+    limit that ID in your phone's Google settings. Pro subscribers see no ads and nothing is sent
+    to AdMob.</p>
+    <p><strong>Children.</strong> The app is for adults. It is not directed at anyone under 18,
+    and the AI estimate refuses photos that appear to show a minor. If you believe a child has
+    used the app, contact us and we will help remove any server-side records.</p>
+    <p><strong>Security.</strong> All traffic between the app and our server is encrypted. Our
+    server runs on <a href="https://supabase.com/privacy" rel="noopener">Supabase</a>, which hosts
+    the anonymous-ID usage table and the AI relay. No photos or measurements are stored there.</p>
+    <p><strong>Changes.</strong> If this policy changes in a way that affects you, the app will
+    tell you the next time you open it. The date at the top of this page is always the current
+    version.</p>
+    <p><strong>Contact.</strong> <a href="mailto:dddruwu@gmail.com">dddruwu@gmail.com</a> · Andrew
+    Alvaran · Australia</p>
+  </section>
+
+  <footer>LEANR · <a href="mailto:dddruwu@gmail.com">dddruwu@gmail.com</a></footer>
+
+</div>
+</body>
+</html>
