@@ -117,7 +117,7 @@
 
   <section class="card">
     <h2>What data the app handles, and where it lives</h2>
-    <p>Almost everything stays in the app on your phone. Only the last three rows below ever
+    <p>Almost everything stays in the app on your phone. Only the last four rows below ever
     touch our servers.</p>
 
     <div class="table-scroll">
@@ -135,6 +135,7 @@
           <tr><td>A photo, during an AI estimate</td><td class="where server">Our server, for seconds, then deleted</td><td>To get the estimate</td></tr>
           <tr><td>A summary of your numbers, during a weekly read</td><td class="where server">Our server, for seconds, then deleted</td><td>To write the note</td></tr>
           <tr><td>An anonymous ID and a device ID</td><td class="where server">Our server</td><td>To count AI usage and stop the free estimate being reused</td></tr>
+          <tr><td>A review code, only if you enter one</td><td class="where server">Our server, with your anonymous ID, until 30 days after the code's access ends</td><td>To unlock Pro for app reviewers and testers</td></tr>
         </tbody>
       </table>
     </div>
@@ -201,6 +202,10 @@
       <li><strong>Delete everything.</strong> Uninstall the app. All data and photos in the app's
       private folder go with it. Our server keeps only the anonymous-ID usage rows described
       above, which cannot be linked back to you; they are deleted after 13 months.</li>
+      <li><strong>Delete what is on our server.</strong> In Settings, under Your data, tap Delete
+      my data. It opens your email app with your anonymous ID filled in. Send it and we will delete
+      every server record for that ID. Without the ID we cannot find them, because nothing on our
+      server says who you are.</li>
       <li><strong>Export.</strong> Pro subscribers can export their history as a CSV file from
       Settings. That file is yours; we don't receive a copy.</li>
       <li><strong>Backup.</strong> If Android backup is on for your phone, the app's database is
